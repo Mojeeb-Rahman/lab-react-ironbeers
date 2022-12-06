@@ -1,13 +1,128 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.homeNav {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.homeNavItem {
+  margin-bottom: 24px;
+  text-decoration: none;
+}
+.homeNavItem img {
+  width: 100%;
+}
+.homeNavItem h1,
+p {
+  padding: 0px 8px;
+  text-align: left;
+  color: #555;
+}
+.beerList {
+  width: 80%;
+  margin: 0 auto;
+  padding: 34px;
+}
+.beerListItem {
+  display: flex;
+  gap: 16px;
+  justify-content: baseline;
+  padding: 8px;
+  border-bottom: 1px solid #555;
+  text-decoration: none;
+  color: black;
+}
+.beerListItem div:first-child {
+  flex-basis: 20%;
+}
+
+.beerListItem img {
+  height: 120px;
+}
+.singleBeer {
+  padding: 64px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.singleBeer img {
+  height: 250px;
+}
+.nav {
+  height: 60px;
+  background-color: rgb(4, 113, 214);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+.singleBeerDetail {
+  padding: 64px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.singleBeerDetail h5,
+.singleBeerDetail h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.singleBeerDetail img {
+  height: 350px;
+}
+
+.newBeer {
+  padding: 64px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 16px;
+}
+
+.formItem input,
+.formItem textarea {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #555;
+}
+
+button {
+  padding: 8px;
+  background-color: rgb(4, 113, 214);
+  border-radius: 8px;
+  color: white;
 }
